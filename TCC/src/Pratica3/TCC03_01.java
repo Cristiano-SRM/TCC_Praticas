@@ -10,7 +10,7 @@ public class TCC03_01 {
         String palavra = "";
 
         // Primeiro loop, a palavra oscila entre estado q0 e s3 no autômato finito não deterministico
-        while (true) {
+        do {
             System.out.println("Digite uma letra ('a' ou 'b'): ");
             String entrada = input.nextLine();
             
@@ -35,13 +35,13 @@ public class TCC03_01 {
             }
 
             System.out.println("Estado atual: " + estadoAtual);
-        }
+        } while(true);
 
         System.out.println("Palavra atual no estado s6: " + palavra);
         System.out.println("Estados s6 e s4 são de aceitação.");
 
         // Segundo loop entre s4 e s6, estados conclusivos aonde o usuario pode terminar sua palavra a qualquer momento
-        while (true) {
+        do {
             System.out.println("Digite uma letra ('a' ou 'b'): ");
             String entrada = input.nextLine();
             
@@ -70,7 +70,7 @@ public class TCC03_01 {
             if (condicao.equalsIgnoreCase("n")) {
                 break;
             }
-        }
+        } while(true);
 
         System.out.println("Palavra final aceita: " + palavra); // fim, caso a palavra tenha sido aceita e o programa não tenha se terminado anteriormente
         System.out.println("Palavra concluída em: " + estadoAtual);
