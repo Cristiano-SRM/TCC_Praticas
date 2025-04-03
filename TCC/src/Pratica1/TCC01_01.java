@@ -16,7 +16,6 @@ public class TCC01_01 {
          // Logica da 'substring' (inicio, fim) prefixo pega do inicio (posição 0) ate o meio da string
          //  sufixo pega do meio (determinado pela divisão por 2) ate o fim
         
-       
         System.out.println("Prefixo: " + prefixo);
         System.out.println("Sufixo: " + sufixo);
         // Imprime prefixo e sufixo respectivamente e pergunta caso queira que o programa se repita

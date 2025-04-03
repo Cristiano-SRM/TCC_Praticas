@@ -5,6 +5,7 @@ public class TCC02_01 {
 
 	public static void main(String[] args) {
 	Scanner input = new Scanner(System.in);
+   //autômato finito deterministico aonde qualquer entrada de 'a' e 'b' a partir de qualquer estado leva ao mesmo resultado.
 	  System.out.println("Considerando um AFD que so aceita 'a' ou 'b' a partir de qualquer estado informe uma palavra: ");
       String stringInformada;
       stringInformada = input.nextLine();
