@@ -4,7 +4,7 @@ import java.util.Scanner;
 public class TCC03_01 {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
-        System.out.println("Dado um AFN que aceita 'a' ou 'b', digite uma palavra: ");
+        System.out.println("Dado um autômato que aceita 'a' ou 'b', digite uma palavra: ");
 
         String estadoAtual = "q0"; 
         String palavra = "";
