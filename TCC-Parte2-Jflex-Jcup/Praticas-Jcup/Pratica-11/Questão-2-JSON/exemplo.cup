@@ -1,0 +1,61 @@
+import java_cup.runtime.*;
+
+/* 
+   parser code {: ... :}:
+   Permite incluir um método main() diretamente dentro da 
+   classe do analisador sintático 
+*/
+
+parser code {:
+  public static void main(String[] args) throws Exception {
+    Compilador compilador = new Compilador();
+    compilador.compilar(args[0]);
+  }
+:}
+
+/* terminais (tokens reconhecidos pelo analisador lexico declarados no .flex)
+que serão posteriormente informados ao analisador sintatico (parser) que utilizara os tokens para analisar a estrutura gramatical do codigo
+verificando se as sequencias estão de acordo com as regras */
+
+terminal ESQCHAVE, DIRCHAVE, ESQCOLCH, DIRCOLCH, DOISPON, VIRG;
+terminal String STRING;
+terminal Integer NUMBERO;
+
+// Não-terminais, estruturas gramaticais, variaveis que ajudam a impor as regras de produção do JSON
+non terminal json, objeto, membros, par, valor, array, elementos;
+
+start with json; /* Começa com json */
+
+json ::= objeto
+       ;
+
+objeto ::= ESQCHAVE membros DIRCHAVE
+         | ESQCHAVE DIRCHAVE   /* objeto vazio {} */
+         ;
+/* json é um objeto, que é um {...} ou {} (informa que é a estrutura entre as chaves esquerda e direita) */
+
+membros ::= par 
+          | par VIRG membros /* VIRG é , */
+          ;
+/* Membros são uma lista de pares chave-valor, o . . . em {...} */
+
+par ::= STRING DOISPON valor /* DOISPON é : */
+      ;
+/* Um par chave-valor: "chave" : valor */
+
+valor ::= STRING
+        | NUMBERO
+        | objeto
+        | array
+        ;
+/* Um valor possível (STRING, NUMBERO, objeto, array) */
+
+array ::= ESQCOLCH elementos DIRCOLCH
+        | ESQCOLCH DIRCOLCH  // array vazio
+        ;
+/* Um [ ... ], valores dentro de um colchete (vetor) */
+
+elementos ::= valor
+            | valor VIRG elementos
+            ;
+/* O . . . dentro de [...](vetor), pode ser um ou mais valores quisquer separados por uma virgula */

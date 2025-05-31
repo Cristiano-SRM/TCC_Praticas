@@ -1,0 +1,11 @@
+{
+  "id": "1",
+  "celular": "99999999999",
+  "nome": "Cristiano",
+  "disciplinas": ["Compiladores", "Sistemas Distribuídos", "Algoritmos"]
+}
+
+select a, b, c
+from tab1, tab2, tab3
+where tab1.id = tab2.id,
+      tab2.id = tab3.id;
