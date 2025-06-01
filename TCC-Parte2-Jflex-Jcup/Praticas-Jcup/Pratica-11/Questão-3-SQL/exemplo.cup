@@ -1,0 +1,54 @@
+import java_cup.runtime.*;
+
+/* 
+   parser code {: ... :}:
+   Permite incluir um método main() diretamente dentro da 
+   classe do analisador sintático 
+*/
+
+parser code {:
+  public static void main(String[] args) throws Exception {
+    Compilador compilador = new Compilador();
+    compilador.compilar(args[0]);
+  }
+:}
+
+/* terminais (tokens reconhecidos pelo analisador lexico declarados no .flex)
+que serão posteriormente informados ao analisador sintatico (parser) que utilizara os tokens para analisar a estrutura gramatical do codigo
+verificando se as sequencias estão de acordo com as regras */
+
+terminal SELECT, FROM, WHERE, VIRG, PTVIRG, IGUAL, PONTO;
+terminal String ID;
+
+/*  Não-terminais, estruturas gramaticais, variaveis que ajudam a impor as regras de produção do SQL */
+non terminal comando, lista_colunas, lista_tabelas, condicoes, condicao, identificador_qualificado;
+
+start with comando;
+
+/* comando completo resumido de um SQL: SELECT colunas FROM tabelas WHERE condições; */
+comando ::= SELECT lista_colunas FROM lista_tabelas WHERE condicoes PTVIRG
+          ;
+
+/* lista de colunas depois do SELECT: a, b, c, etc.*/
+lista_colunas ::= identificador_qualificado
+                | identificador_qualificado VIRG lista_colunas
+                ;
+
+/* lista de tabelas depois do FROM: tab1, tab2, tab3 */
+lista_tabelas ::= identificador_qualificado
+                | identificador_qualificado VIRG lista_tabelas
+                ;
+
+/* lista de condições: tab1.id = tab2.id, tab2.id = tab3.id. Cada igualidade pode ser separado por uma VIRG(virgula) */
+condicoes ::= condicao
+            | condicao VIRG condicoes
+            ;
+
+/* condição: identificador = identificador */
+condicao ::= identificador_qualificado IGUAL identificador_qualificado
+           ;
+
+/* identificador qualificado: ID ou ID.PONTO.ID (a ou a.b) */
+identificador_qualificado ::= ID
+                            | ID PONTO ID
+                            ;

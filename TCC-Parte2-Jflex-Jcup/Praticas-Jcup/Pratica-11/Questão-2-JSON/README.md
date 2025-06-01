@@ -9,3 +9,12 @@ cd ../../../
 
 2. Executar o `executar.sh`:
 - `./executar.sh`
+
+Exemplos entrada JSON possiveis para o entrada.txt:
+
+{
+  "id": "1",
+  "celular": "99999999999",
+  "nome": "Cristiano",
+  "disciplinas": ["Compiladores", "Sistemas Distribuídos", "Algoritmos"]
+}

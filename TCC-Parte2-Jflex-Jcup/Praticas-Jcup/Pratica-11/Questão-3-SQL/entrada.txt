@@ -1,0 +1,3 @@
+SELECT a
+FROM tab1, tab2
+WHERE tab1.5 = tab2.id, tab1_status = tab2_29;
