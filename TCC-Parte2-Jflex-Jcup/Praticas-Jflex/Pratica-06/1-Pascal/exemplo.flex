@@ -7,10 +7,12 @@
  */
 
 /* 
-  Importa a classe token da pasta token que recebe a linha, coluna, lexema e descrição das regras de produção
- sempre que uma regra for identificada pelo analisador lexico, ele instancia um objeto da token, envia as informações especificas, recebe um resultado retornado
- pela classe e imprime o resultado chamando o metodo imprimir da classe token instanciada
- */
+  Importa a classe Token localizada no pacote token 
+Sempre que uma regra for identificada pelo analisador léxico, o analisador cria uma nova instância de Token (objeto), 
+passando as informações específicas: linha, coluna, lexema e descrição. 
+Em seguida, chama o método 'imprimir()' da instância de Token para exibir os dados do token reconhecido.
+*/
+
 import token.Token;
 
 %%
@@ -26,7 +28,7 @@ import token.Token;
 %class Scanner      // Troca o nome da classe Yylex para Scanner.
 
 %{
-  Token token;
+  Token token; /* Declara a variavel token do tipo Token dentro do yylex (Scanner)*/
 %}
 
 /* Macros utilizados para ler um trecho de codigo pascal: */
@@ -49,8 +51,7 @@ ID = [_|a-z|A-Z][a-z|A-Z|0-9|_]*
 %%
 
 /*  
- * Regras e Ações Associadas: seção de instruções para
- * o analisador léxico. 
+   Regras: seção de instruções para o analisador léxico. (Quando Lê um token, imprime na tela) 
  */
 
 {ABREPARENTESE}  { token = new Token(yyline, yycolumn, yytext(), "Abre parêntese"); token.imprimir(); }

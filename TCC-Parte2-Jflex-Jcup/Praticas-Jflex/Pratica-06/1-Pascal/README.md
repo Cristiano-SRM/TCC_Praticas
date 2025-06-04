@@ -7,7 +7,7 @@
 
 ## Execução:
 
-`cd TCC-Parte2-Jflex-Jcup/Praticas-Jflex/Pratica-06` *Recomendado, pode ser necessario/evitar ter que atribuir muitos paths a cada comando
+`cd TCC-Parte2-Jflex-Jcup/Praticas-Jflex/Pratica-06/1-Pascal` *Recomendado, pode ser necessario/evitar ter que atribuir muitos paths a cada comando
 
 `jflex exemplo.flex`
 
