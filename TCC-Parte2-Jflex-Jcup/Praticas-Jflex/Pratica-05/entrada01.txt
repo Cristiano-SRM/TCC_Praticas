@@ -1,0 +1,17 @@
+12/05/2025
+31/12/1999
+
+08:30
+23:59
+
+55+ (011) 9 1234-5678
+21+ (021) 9 8765-4321
+
+123.456.789-09
+987.654.321-00
+
+teste.email@dominio.com
+usuario_123@site.org
+
+https://www.exemplo.com
+http://meusite.net/pagina?param=valor

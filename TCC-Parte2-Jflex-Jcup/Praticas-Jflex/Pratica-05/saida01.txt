@@ -1,0 +1,10 @@
+ -> Encontrei um <Token: DATA, Lexema: 12/05/2025, Tamanho: 10, Linha: 0, Coluna: 0>
+ -> Encontrei um <Token: DATA, Lexema: 31/12/1999, Tamanho: 10, Linha: 1, Coluna: 0>
+ -> Encontrei um <Token: HORA, Lexema: 08:30, Tamanho: 5, Linha: 3, Coluna: 0>
+ -> Encontrei um <Token: HORA, Lexema: 23:59, Tamanho: 5, Linha: 4, Coluna: 0>
+ -> Encontrei um <Token: TELEFONE, Lexema: 55+ (011) 9 1234-5678, Tamanho: 21, Linha: 6, Coluna: 0>
+ -> Encontrei um <Token: TELEFONE, Lexema: 21+ (021) 9 8765-4321, Tamanho: 21, Linha: 7, Coluna: 0>
+ -> Encontrei um <Token: CPF, Lexema: 123.456.789-09, Tamanho: 14, Linha: 9, Coluna: 0>
+ -> Encontrei um <Token: CPF, Lexema: 987.654.321-00, Tamanho: 14, Linha: 10, Coluna: 0>
+ -> Encontrei um <Token: EMAIL, Lexema: email@dominio.com, Tamanho: 17, Linha: 12, Coluna: 6>
+ -> Encontrei um <Token: URL, Lexema: https://www.exemplo.com, Tamanho: 23, Linha: 15, Coluna: 0>
