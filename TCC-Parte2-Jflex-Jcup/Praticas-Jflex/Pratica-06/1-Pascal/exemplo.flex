@@ -28,7 +28,7 @@ import token.Token;
 %class Scanner      // Troca o nome da classe Yylex para Scanner.
 
 %{
-  Token token; /* Declara a variavel token do tipo Token dentro do yylex (Scanner)*/
+  Token token; /* Declara a variavel token do tipo Token dentro do analisador lexico (Yylex, ou neste caso renomeado para Scanner)*/
 %}
 
 /* Macros utilizados para ler um trecho de codigo pascal: */
