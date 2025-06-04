@@ -1,0 +1,130 @@
+[0][0] delta: Identificador.
+[0][5]  : Espaço em branco.
+[0][6] :=: Atribuição.
+[0][8]  : Espaço em branco.
+[0][9] b: Identificador.
+[0][10]  : Espaço em branco.
+[0][11] *: Operador multiplicação.
+[0][12]  : Espaço em branco.
+[0][13] b: Identificador.
+[0][14]  : Espaço em branco.
+[0][15] -: Operador subtração.
+[0][16]  : Espaço em branco.
+[0][17] 4: Número.
+[0][18]  : Espaço em branco.
+[0][19] *: Operador multiplicação.
+[0][20]  : Espaço em branco.
+[0][21] a: Identificador.
+[0][22]  : Espaço em branco.
+[0][23] *: Operador multiplicação.
+[0][24]  : Espaço em branco.
+[0][25] c: Identificador.
+[0][26] ;: Ponto e vírgula.
+[0][27] 
+: Espaço em branco.
+[1][0] if: Palavra reservada if.
+[1][2]  : Espaço em branco.
+[1][3] delta: Identificador.
+[1][8]  : Espaço em branco.
+[1][9] <: Operador menor.
+[1][10]  : Espaço em branco.
+[1][11] 0: Número.
+[1][12]  : Espaço em branco.
+[1][13] then: Palavra reservada then.
+[1][17] 
+: Espaço em branco.
+[2][0]  : Espaço em branco.
+[2][1]  : Espaço em branco.
+[2][2] writeln: Palavra reservada writeln.
+[2][9]  : Espaço em branco.
+[2][10] (: Abre parêntese.
+[2][11] 'Nao tem raizes reais': Constante string.
+[2][33] ): Fecha parêntese.
+[2][34] 
+: Espaço em branco.
+[3][0] else: Palavra reservada else.
+[3][4]  : Espaço em branco.
+[3][5] begin: Palavra reservada begin.
+[3][10] 
+: Espaço em branco.
+[4][0]  : Espaço em branco.
+[4][1]  : Espaço em branco.
+[4][2] x1: Identificador.
+[4][4]  : Espaço em branco.
+[4][5] :=: Atribuição.
+[4][7]  : Espaço em branco.
+[4][8] (: Abre parêntese.
+[4][9] -: Operador subtração.
+[4][10] b: Identificador.
+[4][11]  : Espaço em branco.
+[4][12] +: Operador soma.
+[4][13]  : Espaço em branco.
+[4][14] sqrt: Palavra reservada sqrt.
+[4][18]  : Espaço em branco.
+[4][19] (: Abre parêntese.
+[4][20] delta: Identificador.
+[4][25] ): Fecha parêntese.
+[4][26] ): Fecha parêntese.
+[4][27]  : Espaço em branco.
+[4][28] /: Operador divisão.
+[4][29]  : Espaço em branco.
+[4][30] (: Abre parêntese.
+[4][31] 2: Número.
+[4][32] *: Operador multiplicação.
+[4][33] a: Identificador.
+[4][34] ): Fecha parêntese.
+[4][35] ;: Ponto e vírgula.
+[4][36] 
+: Espaço em branco.
+[5][0]  : Espaço em branco.
+[5][1]  : Espaço em branco.
+[5][2] x2: Identificador.
+[5][4]  : Espaço em branco.
+[5][5] :=: Atribuição.
+[5][7]  : Espaço em branco.
+[5][8] (: Abre parêntese.
+[5][9] -: Operador subtração.
+[5][10] b: Identificador.
+[5][11]  : Espaço em branco.
+[5][12] -: Operador subtração.
+[5][13]  : Espaço em branco.
+[5][14] sqrt: Palavra reservada sqrt.
+[5][18]  : Espaço em branco.
+[5][19] (: Abre parêntese.
+[5][20] delta: Identificador.
+[5][25] ): Fecha parêntese.
+[5][26] ): Fecha parêntese.
+[5][27]  : Espaço em branco.
+[5][28] /: Operador divisão.
+[5][29]  : Espaço em branco.
+[5][30] (: Abre parêntese.
+[5][31] 2: Número.
+[5][32] *: Operador multiplicação.
+[5][33] a: Identificador.
+[5][34] ): Fecha parêntese.
+[5][35] ;: Ponto e vírgula.
+[5][36] 
+: Espaço em branco.
+[6][0]  : Espaço em branco.
+[6][1]  : Espaço em branco.
+[6][2] writeln: Palavra reservada writeln.
+[6][9]  : Espaço em branco.
+[6][10] (: Abre parêntese.
+[6][11] 'As raizes sao ': Constante string.
+[6][27] ,: Vírgula.
+[6][28]  : Espaço em branco.
+[6][29] x1: Identificador.
+[6][31] ,: Vírgula.
+[6][32]  : Espaço em branco.
+[6][33] ' e ': Constante string.
+[6][38] ,: Vírgula.
+[6][39]  : Espaço em branco.
+[6][40] x2: Identificador.
+[6][42] ): Fecha parêntese.
+[6][43] ;: Ponto e vírgula.
+[6][44] 
+: Espaço em branco.
+[7][0] end: Palavra reservada end.
+[7][3] ;: Ponto e vírgula.
+[7][4] 
+: Espaço em branco.
