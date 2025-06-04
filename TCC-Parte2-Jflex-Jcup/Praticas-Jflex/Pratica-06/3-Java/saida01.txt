@@ -1,0 +1,86 @@
+[0][0] public: Palavra reservada public.
+[0][6]  : Espaço em branco.
+[0][7] class: Palavra reservada class.
+[0][12]  : Espaço em branco.
+[0][13] Principal: Classe Principal.
+[0][22]  : Espaço em branco.
+[0][23] {: Abre chave.
+[0][24] 
+: Espaço em branco.
+[1][0] public: Palavra reservada public.
+[1][6]  : Espaço em branco.
+[1][7] static: Palavra reservada static.
+[1][13]  : Espaço em branco.
+[1][14] void: Palavra reservada void.
+[1][18]  : Espaço em branco.
+[1][19] main: Identificador.
+[1][23] (: Abre parêntese.
+[1][24] String: Identificador.
+[1][30] [: Abre colchete.
+[1][31] ]: Fecha colchete.
+[1][32]  : Espaço em branco.
+[1][33] args: Parâmetro args.
+[1][37] ): Fecha parêntese.
+[1][38]  : Espaço em branco.
+[1][39] {: Abre chave.
+[1][40] 
+: Espaço em branco.
+[2][0] int: Palavra reservada int.
+[2][3] [: Abre colchete.
+[2][4] ]: Fecha colchete.
+[2][5]  : Espaço em branco.
+[2][6] numeros: Identificador.
+[2][13]  : Espaço em branco.
+[2][14] =: Operador de atribuição.
+[2][15]  : Espaço em branco.
+[2][16] {: Abre chave.
+[2][17] 1: Número.
+[2][18] ,: Vírgula.
+[2][19]  : Espaço em branco.
+[2][20] 2: Número.
+[2][21] ,: Vírgula.
+[2][22]  : Espaço em branco.
+[2][23] 3: Número.
+[2][24] ,: Vírgula.
+[2][25]  : Espaço em branco.
+[2][26] 4: Número.
+[2][27] ,: Vírgula.
+[2][28]  : Espaço em branco.
+[2][29] 5: Número.
+[2][30] }: Fecha chave.
+[2][31] ;: Ponto e vírgula.
+[2][32] 
+: Espaço em branco.
+[3][0] for: Palavra reservada for.
+[3][3]  : Espaço em branco.
+[3][4] (: Abre parêntese.
+[3][5] int: Palavra reservada int.
+[3][8]  : Espaço em branco.
+[3][9] numero: Identificador.
+[3][15]  : Espaço em branco.
+[3][16] :: Dois pontos.
+[3][17]  : Espaço em branco.
+[3][18] numeros: Identificador.
+[3][25] ): Fecha parêntese.
+[3][26]  : Espaço em branco.
+[3][27] {: Abre chave.
+[3][28] 
+: Espaço em branco.
+[4][0] System: Classe System.
+[4][6] .: Operador de acesso.
+[4][7] out: Objeto out.
+[4][10] .: Operador de acesso.
+[4][11] println: Método println.
+[4][18] (: Abre parêntese.
+[4][19] numero: Identificador.
+[4][25] ): Fecha parêntese.
+[4][26] ;: Ponto e vírgula.
+[4][27] 
+: Espaço em branco.
+[5][0] }: Fecha chave.
+[5][1] 
+: Espaço em branco.
+[6][0] }: Fecha chave.
+[6][1] 
+: Espaço em branco.
+[7][0] }: Fecha chave.
