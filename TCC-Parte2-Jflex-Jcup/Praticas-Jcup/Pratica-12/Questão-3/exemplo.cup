@@ -1,0 +1,66 @@
+import java_cup.runtime.*;
+
+/*
+=> init with {: ... :}
+   Código que será inserido dentro do construtor da classe 
+   do analisador sintático; por isso, executado no início. 
+*/
+init with {: 
+:}
+
+/* 
+=> parser code {: ... :}:
+   Permite incluir um método main() diretamente dentro da 
+   classe do analisador sintático, dispensando a criação de 
+   uma classe principal (Main) com o método main().
+
+   O próprio analisador sintático será responsável por iniciar 
+   a execução.
+*/
+parser code {:
+  //Atributo da classe do analisador sintático:
+  private String nomeDoArquivo;
+
+  // Novo construtor personalizado do analisador sintático:
+  public MeuParser(java_cup.runtime.Scanner meuScanner, String nomeDoArquivo) {
+    super(meuScanner);
+    this.nomeDoArquivo = nomeDoArquivo;
+  }
+
+  public static void main(String[] args) throws Exception {
+    Compilador compilador = new Compilador();
+    compilador.compilar(args[0]);
+  }
+:}
+
+/*
+=> action code {: ... :}
+   Área para funções auxiliares, útil se quiser separar lógica.
+*/
+action code {:
+  
+:}
+
+terminal Integer INTEIRO;
+terminal DO, NUM, OUT, MAIOR, MENOR, IGUAL, INCREMENT, PTVIRG, PARENTESQ, PARENTDIR, COLCHESQ, COLCHDIR;
+
+non terminal comando, rep, objeto, membros, valor;
+
+start with comando;
+
+comando ::= DO rep 
+         | OUT objeto 
+         ;
+
+rep ::= COLCHESQ membros COLCHDIR
+         ;
+
+membros ::= NUM IGUAL valor PTVIRG NUM MAIOR valor PTVIRG NUM INCREMENT
+         | NUM IGUAL valor PTVIRG NUM MENOR valor PTVIRG NUM INCREMENT
+         ;
+
+objeto ::= PARENTESQ NUM PARENTDIR
+         ;
+
+valor ::= INTEIRO
+         ;

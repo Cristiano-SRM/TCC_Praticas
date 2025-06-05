@@ -1,0 +1,4 @@
+> do [num = 1; num < 10; num++] 
+Repetição DO válida!
+> out(num)
+Repetição DO válida!
