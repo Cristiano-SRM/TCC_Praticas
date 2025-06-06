@@ -1,0 +1,35 @@
+import java_cup.runtime.*;
+
+init with {: 
+:}
+
+parser code {:
+  private String nomeDoArquivo;
+
+  public MeuParser(java_cup.runtime.Scanner meuScanner, String nomeDoArquivo) {
+    super(meuScanner);
+    this.nomeDoArquivo = nomeDoArquivo;
+  }
+
+  public static void main(String[] args) throws Exception {
+    Compilador compilador = new Compilador();
+    compilador.compilar(args[0]);
+  }
+:}
+
+terminal String STRING;
+terminal HYPERLINK, CLOSEHYPER, REFERENCE, IMAGE, SOURCE;
+terminal ABRETAG, FECHATAG, IGUAL, CLOSEBAR, ASPAS;
+
+non terminal comando, valor;
+
+start with comando;
+
+comando ::= ABRETAG HYPERLINK REFERENCE IGUAL ASPAS valor ASPAS FECHATAG
+            valor
+            ABRETAG CLOSEHYPER FECHATAG
+          | ABRETAG IMAGE SOURCE IGUAL ASPAS valor ASPAS CLOSEBAR FECHATAG
+          ;
+
+valor ::= STRING
+         ;
