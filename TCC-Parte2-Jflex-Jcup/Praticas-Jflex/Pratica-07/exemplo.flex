@@ -1,49 +1,44 @@
 %%
 
-%standalone          // Executa sem precisar de um parser
-%class Scanner       // Nome da classe gerada
-%line                // Ativa rastreamento de linha
-%column              // Ativa rastreamento de coluna
-%type void     // Especifica o tipo de retorno do yylex().
+%public
+%class Scanner
+%line
+%column
+%unicode
+%standalone
 
 %{
-   // Variável para armazenar a String (StringBuilder melhora o desempenho):
-    private StringBuilder comentario = new StringBuilder();
-
-    // Método auxiliar para imprimir o comentário:
-    private void imprimirComentario(String texto, int linha, int coluna) {
-        System.out.println("Comentário (linha: " + linha + ", coluna: " + coluna + "): " + texto.trim());
-    }
+  private void print(String type, String value) {
+    System.out.println("[" + type + "]: " + value.trim());
+  }
 %}
-
-%states TITLE
+//macros ( \ antes do espaço da escape, faz com que ignore espaços e leia sem dar erro de compilação )
+Patente = 7022487
+Titulo = United\ States\ Patent
+Data = July\ 31,\ 2003
+Resumo = SUMMARY\ OF\ THE\ INVENTION
+Reivindicações = Claims
 
 %%
 
-<YYINITIAL>{
-    "<TITLE>" {
-        yybegin(TITLE);
-        comentario.setLength(0);
-    }
-     [^] { /* Ignorar qualquer caracter fora de comentários. */ }
+{Patente}  {
+   System.out.println("[Linha:" + yyline + " Coluna:" + yycolumn + "] " + yytext() + " ( 1.Numero )" );
 }
 
-<TITLE> {
-    "</TITLE>" {
-        yybegin(YYINITIAL);
-        imprimirComentario(comentario.toString(), yyline, yycolumn);
-        comentario.setLength(0);
-    }
-
-     . { comentario.append(yytext()); }
+{Titulo} {
+   System.out.println("[Linha:" + yyline + " Coluna:" + yycolumn + "] " + yytext() + " ( 2.Titulo )" );
 }
 
-<<EOF>> { 
-    if (comentario.length() > 0) {
-        imprimirComentario(comentario.toString(), yyline, yycolumn);
-        comentario.setLength(0);
-    }
-    System.out.println("Fim do arquivo!");
-
-    return;
+{Data} {
+   System.out.println("[Linha:" + yyline + " Coluna:" + yycolumn + "] " + yytext() + " ( 3.Data de publicação )" );
 }
+
+{Resumo} {
+    System.out.println("[Linha:" + yyline + " Coluna:" + yycolumn + "] " + yytext() + " ( 4.Resumo [O resumo se encontra proximo a esta linha] )" );
+}
+
+{Reivindicações} {
+    System.out.println("[Linha:" + yyline + " Coluna:" + yycolumn + "] " + yytext() + " ( 5.Reivindicações [As reivindicações se encontram proximo a estas linhas] )" );
+}
+
+[^]  { /* ignora outros caracteres */ }

@@ -1,5 +1,7 @@
 # 07-jflex
 
+cd TCC-Parte2-Jflex-Jcup/Praticas-Jflex/Pratica-07
+
 ## Instalação:
 `sudo apt update`
 
