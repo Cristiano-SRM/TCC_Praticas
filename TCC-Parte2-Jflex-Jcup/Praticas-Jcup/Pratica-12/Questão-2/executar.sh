@@ -15,4 +15,4 @@ java -cp ../../../jcup.jar java_cup.Main -parser MeuParser exemplo.cup
 javac -cp ../../../jcup.jar *.java
 
 # Executar a classe principal:
-java -cp .:../../../jcup.jar MeuParser ./entrada.txt
+java -cp .:../../../jcup.jar MeuParser ./entrada.txt > saida.txt
