@@ -9,10 +9,12 @@
  */
 
 /* 
-  Importa a classe token da pasta token que recebe a linha, coluna, lexema e descrição das regras de produção
- sempre que uma regra for identificada pelo analisador lexico, ele instancia um objeto da token, envia as informações especificas, recebe um resultado retornado
- pela classe e imprime o resultado chamando o metodo imprimir da classe token instanciada
- */
+  Importa a classe Token localizada no pacote token 
+Sempre que uma regra for identificada pelo analisador léxico, o analisador cria uma nova instância de Token (objeto), 
+passando as informações específicas: linha, coluna, lexema e descrição. 
+Em seguida, chama o método 'imprimir()' da instância de Token para exibir os dados do token reconhecido.
+*/
+
 import token.Token;
 
 
@@ -265,7 +267,7 @@ class Scanner {
   private int zzFinalHighSurrogate = 0;
 
   /* user code: */
-  Token token;
+  Token token; /* Declara a variavel token do tipo Token dentro do analisador lexico (Yylex, ou neste caso renomeado para Scanner)*/
 
 
   /**

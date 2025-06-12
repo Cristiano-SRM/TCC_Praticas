@@ -49,7 +49,7 @@ non terminal comando, objeto, membros, valor;
 
 start with comando;
 
-comando ::= IF objeto STRING IGUAL INTEIRO PTVIRG ELSE STRING IGUAL INTEIRO PTVIRG
+comando ::= IF objeto STRING IGUAL INTEIRO PTVIRG
        ;
 
 objeto ::= PARENTESQ membros PARENTDIR

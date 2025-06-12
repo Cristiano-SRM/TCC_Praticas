@@ -19,7 +19,7 @@ cd TCC-Parte2-Jflex-Jcup/Praticas-Jflex/Pratica-07
 
 ## Jogando a saída num arquivo:
 
-`java Scanner entrada01.txt > saida01.txt`
+`java Scanner p7022487.html > saida.txt`
 
 # Git
 `git add .`

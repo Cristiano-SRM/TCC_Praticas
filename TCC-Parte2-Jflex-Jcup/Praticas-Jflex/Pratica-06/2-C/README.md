@@ -13,11 +13,11 @@
 
 `javac Scanner.java`
 
-`java Scanner entrada01.txt`
+`java Scanner entrada.txt`
 
 ## Jogando a saída num arquivo:
 
-`java Scanner entrada01.txt > saida01.txt`
+`java Scanner entrada.txt > saida.txt`
 
 # Git
 `git add .`

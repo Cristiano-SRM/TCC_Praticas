@@ -2,7 +2,6 @@
 
 (muda repositorio no terminal)
 cd TCC-Parte2-Jflex-Jcup/Praticas-Jcup/Pratica-11/Questão-3-SQL
-cd ../../../
 
 Self notes:
 usar /* */ ao inves de // evita bugs no cup e flex 

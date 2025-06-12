@@ -40,12 +40,11 @@ class Scanner {
    * Translates characters to character classes
    */
   private static final String ZZ_CMAP_PACKED = 
-    "\11\0\1\6\1\6\1\21\1\21\1\21\22\0\1\6\7\0\1\7"+
-    "\1\10\1\0\1\5\1\0\1\11\1\12\1\3\12\2\1\4\2\0"+
-    "\1\20\1\0\1\20\1\13\32\1\4\0\1\20\1\0\7\1\1\14"+
-    "\7\1\1\16\2\1\1\17\1\15\6\1\12\0\1\21\32\0\1\6"+
-    "\u15df\0\1\6\u097f\0\13\6\35\0\1\21\1\21\5\0\1\6\57\0"+
-    "\1\6\u0fa0\0\1\6\uffff\0\uffff\0\uffff\0\uffff\0\uffff\0\uffff\0\uffff\0\uffff\0\uffff\0\uffff\0\uffff\0\uffff\0\uffff\0\uffff\0\uffff\0\uffff\0\ud00f\0";
+    "\11\0\5\6\22\0\1\6\7\0\1\7\1\10\1\0\1\5\1\0"+
+    "\1\11\1\12\1\3\12\2\1\4\2\0\1\20\1\0\1\20\1\13"+
+    "\32\1\4\0\1\20\1\0\7\1\1\14\7\1\1\16\2\1\1\17"+
+    "\1\15\6\1\12\0\1\6\32\0\1\6\u15df\0\1\6\u097f\0\13\6"+
+    "\35\0\2\6\5\0\1\6\57\0\1\6\u0fa0\0\1\6\uffff\0\uffff\0\uffff\0\uffff\0\uffff\0\uffff\0\uffff\0\uffff\0\uffff\0\uffff\0\uffff\0\uffff\0\uffff\0\uffff\0\uffff\0\uffff\0\ud00f\0";
 
   /** 
    * Translates characters to character classes
@@ -58,11 +57,11 @@ class Scanner {
   private static final int [] ZZ_ACTION = zzUnpackAction();
 
   private static final String ZZ_ACTION_PACKED_0 =
-    "\1\0\4\1\1\2\20\0\1\3\2\0\1\4\21\0"+
-    "\1\5\1\0\1\6\7\0\1\7\4\0\1\10";
+    "\1\0\4\1\20\0\1\2\2\0\1\3\21\0\1\4"+
+    "\1\0\1\5\7\0\1\6\4\0\1\7";
 
   private static int [] zzUnpackAction() {
-    int [] result = new int[59];
+    int [] result = new int[58];
     int offset = 0;
     offset = zzUnpackAction(ZZ_ACTION_PACKED_0, offset, result);
     return result;
@@ -87,17 +86,17 @@ class Scanner {
   private static final int [] ZZ_ROWMAP = zzUnpackRowMap();
 
   private static final String ZZ_ROWMAP_PACKED_0 =
-    "\0\0\0\22\0\44\0\66\0\110\0\22\0\44\0\132"+
-    "\0\154\0\176\0\220\0\242\0\264\0\306\0\330\0\352"+
-    "\0\374\0\u010e\0\u0120\0\u0132\0\u0144\0\u0156\0\374\0\u0168"+
-    "\0\u017a\0\22\0\u018c\0\u019e\0\u01b0\0\u01c2\0\u01d4\0\u01e6"+
-    "\0\u01f8\0\u020a\0\u021c\0\u022e\0\u0240\0\u0252\0\u0264\0\u0276"+
-    "\0\u0288\0\u029a\0\u02ac\0\u0276\0\u02be\0\22\0\u02d0\0\u02e2"+
-    "\0\u02f4\0\u0306\0\u0318\0\u032a\0\u033c\0\22\0\u034e\0\u0360"+
-    "\0\u0372\0\u0384\0\22";
+    "\0\0\0\21\0\42\0\63\0\104\0\42\0\125\0\146"+
+    "\0\167\0\210\0\231\0\252\0\273\0\314\0\335\0\356"+
+    "\0\377\0\u0110\0\u0121\0\u0132\0\u0143\0\356\0\u0154\0\u0165"+
+    "\0\21\0\u0176\0\u0187\0\u0198\0\u01a9\0\u01ba\0\u01cb\0\u01dc"+
+    "\0\u01ed\0\u01fe\0\u020f\0\u0220\0\u0231\0\u0242\0\u0253\0\u0264"+
+    "\0\u0275\0\u0286\0\u0253\0\u0297\0\21\0\u02a8\0\u02b9\0\u02ca"+
+    "\0\u02db\0\u02ec\0\u02fd\0\u030e\0\21\0\u031f\0\u0330\0\u0341"+
+    "\0\u0352\0\21";
 
   private static int [] zzUnpackRowMap() {
-    int [] result = new int[59];
+    int [] result = new int[58];
     int offset = 0;
     offset = zzUnpackRowMap(ZZ_ROWMAP_PACKED_0, offset, result);
     return result;
@@ -120,30 +119,29 @@ class Scanner {
   private static final int [] ZZ_TRANS = zzUnpackTrans();
 
   private static final String ZZ_TRANS_PACKED_0 =
-    "\1\2\1\3\1\4\11\2\1\5\3\3\1\2\1\6"+
-    "\23\0\2\7\10\0\1\10\4\7\4\0\1\11\20\0"+
-    "\2\7\10\0\1\10\1\7\1\12\2\7\3\0\1\13"+
-    "\12\0\4\13\4\0\1\14\1\15\1\16\1\17\15\0"+
-    "\2\7\10\0\1\10\1\7\1\20\2\7\3\0\2\13"+
-    "\6\0\1\13\1\21\1\0\4\13\14\0\1\22\11\0"+
-    "\1\23\21\0\1\24\25\0\1\17\1\25\11\0\1\17"+
-    "\1\0\2\7\10\0\1\10\2\7\1\26\1\7\3\0"+
-    "\1\27\12\0\4\27\4\0\1\30\21\0\1\31\21\0"+
-    "\1\32\21\0\1\33\20\0\2\7\10\0\1\10\3\7"+
-    "\1\34\4\0\1\35\22\0\1\36\20\0\1\37\20\0"+
-    "\2\7\1\0\1\40\6\0\1\10\4\7\4\0\1\41"+
-    "\21\0\1\42\21\0\1\43\22\0\1\44\30\0\1\45"+
-    "\11\0\1\46\27\0\1\47\14\0\1\50\20\0\1\51"+
-    "\21\0\1\52\21\0\1\53\3\0\1\47\12\0\1\47"+
-    "\1\0\3\54\5\0\2\54\1\0\5\54\3\0\1\55"+
-    "\21\0\1\56\21\0\1\57\3\0\1\53\12\0\1\53"+
-    "\2\0\1\60\21\0\1\61\30\0\1\62\12\0\1\63"+
-    "\21\0\1\64\21\0\1\65\21\0\1\66\30\0\1\67"+
-    "\12\0\1\70\21\0\1\71\21\0\1\72\21\0\1\73"+
-    "\17\0";
+    "\1\2\1\3\1\4\11\2\1\5\3\3\1\2\22\0"+
+    "\2\6\10\0\1\7\4\6\3\0\1\10\17\0\2\6"+
+    "\10\0\1\7\1\6\1\11\2\6\2\0\1\12\12\0"+
+    "\4\12\3\0\1\13\1\14\1\15\1\16\14\0\2\6"+
+    "\10\0\1\7\1\6\1\17\2\6\2\0\2\12\6\0"+
+    "\1\12\1\20\1\0\4\12\13\0\1\21\10\0\1\22"+
+    "\20\0\1\23\24\0\1\16\1\24\12\0\2\6\10\0"+
+    "\1\7\2\6\1\25\1\6\2\0\1\26\12\0\4\26"+
+    "\3\0\1\27\20\0\1\30\20\0\1\31\20\0\1\32"+
+    "\17\0\2\6\10\0\1\7\3\6\1\33\3\0\1\34"+
+    "\21\0\1\35\17\0\1\36\17\0\2\6\1\0\1\37"+
+    "\6\0\1\7\4\6\3\0\1\40\20\0\1\41\20\0"+
+    "\1\42\21\0\1\43\27\0\1\44\10\0\1\45\26\0"+
+    "\1\46\13\0\1\47\17\0\1\50\20\0\1\51\20\0"+
+    "\1\52\3\0\1\46\13\0\3\53\5\0\2\53\1\0"+
+    "\5\53\2\0\1\54\20\0\1\55\20\0\1\56\3\0"+
+    "\1\52\14\0\1\57\20\0\1\60\27\0\1\61\11\0"+
+    "\1\62\20\0\1\63\20\0\1\64\20\0\1\65\27\0"+
+    "\1\66\11\0\1\67\20\0\1\70\20\0\1\71\20\0"+
+    "\1\72\16\0";
 
   private static int [] zzUnpackTrans() {
-    int [] result = new int[918];
+    int [] result = new int[867];
     int offset = 0;
     offset = zzUnpackTrans(ZZ_TRANS_PACKED_0, offset, result);
     return result;
@@ -181,11 +179,11 @@ class Scanner {
   private static final int [] ZZ_ATTRIBUTE = zzUnpackAttribute();
 
   private static final String ZZ_ATTRIBUTE_PACKED_0 =
-    "\1\0\1\11\3\1\1\11\20\0\1\1\2\0\1\11"+
-    "\21\0\1\1\1\0\1\11\7\0\1\11\4\0\1\11";
+    "\1\0\1\11\3\1\20\0\1\1\2\0\1\11\21\0"+
+    "\1\1\1\0\1\11\7\0\1\11\4\0\1\11";
 
   private static int [] zzUnpackAttribute() {
-    int [] result = new int[59];
+    int [] result = new int[58];
     int offset = 0;
     offset = zzUnpackAttribute(ZZ_ATTRIBUTE_PACKED_0, offset, result);
     return result;
@@ -287,7 +285,7 @@ class Scanner {
     char [] map = new char[0x110000];
     int i = 0;  /* index in packed string  */
     int j = 0;  /* index in unpacked array */
-    while (i < 140) {
+    while (i < 130) {
       int  count = packed.charAt(i++);
       char value = packed.charAt(i++);
       do map[j++] = value; while (--count > 0);
@@ -641,42 +639,37 @@ class Scanner {
             { /* Ignorar */
             } 
             // fall through
-          case 9: break;
+          case 8: break;
           case 2: 
-            { System.out.print(yytext());
-            } 
-            // fall through
-          case 10: break;
-          case 3: 
             { System.out.println(" -> Encontrei um <Token: EMAIL, Lexema: " + getLexema() + ", Tamanho: " + yylength() + ", Linha: " + yyline + ", Coluna: " + yycolumn + ">");
             } 
             // fall through
-          case 11: break;
-          case 4: 
+          case 9: break;
+          case 3: 
             { System.out.println(" -> Encontrei um <Token: HORA, Lexema: " + getLexema() + ", Tamanho: " + yylength() + ", Linha: " + yyline + ", Coluna: " + yycolumn + ">");
             } 
             // fall through
-          case 12: break;
-          case 5: 
+          case 10: break;
+          case 4: 
             { System.out.println(" -> Encontrei um <Token: URL, Lexema: " + getLexema() + ", Tamanho: " + yylength() + ", Linha: " + yyline + ", Coluna: " + yycolumn + ">");
             } 
             // fall through
-          case 13: break;
-          case 6: 
+          case 11: break;
+          case 5: 
             { System.out.println(" -> Encontrei um <Token: DATA, Lexema: " + getLexema() + ", Tamanho: " + yylength() + ", Linha: " + yyline + ", Coluna: " + yycolumn + ">");
             } 
             // fall through
-          case 14: break;
-          case 7: 
+          case 12: break;
+          case 6: 
             { System.out.println(" -> Encontrei um <Token: CPF, Lexema: " + getLexema() + ", Tamanho: " + yylength() + ", Linha: " + yyline + ", Coluna: " + yycolumn + ">");
             } 
             // fall through
-          case 15: break;
-          case 8: 
+          case 13: break;
+          case 7: 
             { System.out.println(" -> Encontrei um <Token: TELEFONE, Lexema: " + getLexema() + ", Tamanho: " + yylength() + ", Linha: " + yyline + ", Coluna: " + yycolumn + ">");
             } 
             // fall through
-          case 16: break;
+          case 14: break;
           default:
             zzScanError(ZZ_NO_MATCH);
         }

@@ -29,6 +29,7 @@ public class Main {
     int result = 1;
     for (int i = 0; i < b; i++) { // se repete X vezes conforme o tamanho do expoente
         result *= a; // multiplica a base por ela mesmo como uma potencia
+        
         /*ex: 5^3 ->
         1 iteração: result(1) = result * base = 1 * 5 = 5(novo result)
         2 iteração: result(5) = result * base = 5 * 5 = 25(novo result)

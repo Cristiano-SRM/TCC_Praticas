@@ -56,28 +56,28 @@ url = https\:\/\/({letra}|{numero}|[./?=_-])+
 /* Regras lexicas, caso estes tokens sejam identificados, imprimem X mensagem*/
 
 {data} {
-    System.out.println(" -> Encontrei um <Token: DATA, Lexema: " + getLexema() + ", Tamanho: " + yylength() + ", Linha: " + yyline + ", Coluna: " + yycolumn + ">");
+    System.out.println(" Encontrei um <Token: DATA, Lexema: " + getLexema() + ", Tamanho: " + yylength() + ", Linha: " + yyline + ", Coluna: " + yycolumn + ">");
 }
 
 {hora} {
-    System.out.println(" -> Encontrei um <Token: HORA, Lexema: " + getLexema() + ", Tamanho: " + yylength() + ", Linha: " + yyline + ", Coluna: " + yycolumn + ">");
+    System.out.println(" Encontrei um <Token: HORA, Lexema: " + getLexema() + ", Tamanho: " + yylength() + ", Linha: " + yyline + ", Coluna: " + yycolumn + ">");
 }
 
 {telefone} {
-    System.out.println(" -> Encontrei um <Token: TELEFONE, Lexema: " + getLexema() + ", Tamanho: " + yylength() + ", Linha: " + yyline + ", Coluna: " + yycolumn + ">");
+    System.out.println(" Encontrei um <Token: TELEFONE, Lexema: " + getLexema() + ", Tamanho: " + yylength() + ", Linha: " + yyline + ", Coluna: " + yycolumn + ">");
 }
 
 {cpf} {
-    System.out.println(" -> Encontrei um <Token: CPF, Lexema: " + getLexema() + ", Tamanho: " + yylength() + ", Linha: " + yyline + ", Coluna: " + yycolumn + ">");
+    System.out.println(" Encontrei um <Token: CPF, Lexema: " + getLexema() + ", Tamanho: " + yylength() + ", Linha: " + yyline + ", Coluna: " + yycolumn + ">");
 }
 
 {email} {
-    System.out.println(" -> Encontrei um <Token: EMAIL, Lexema: " + getLexema() + ", Tamanho: " + yylength() + ", Linha: " + yyline + ", Coluna: " + yycolumn + ">");
+    System.out.println(" Encontrei um <Token: EMAIL, Lexema: " + getLexema() + ", Tamanho: " + yylength() + ", Linha: " + yyline + ", Coluna: " + yycolumn + ">");
 }
 
 {url} {
-    System.out.println(" -> Encontrei um <Token: URL, Lexema: " + getLexema() + ", Tamanho: " + yylength() + ", Linha: " + yyline + ", Coluna: " + yycolumn + ">");
+    System.out.println(" Encontrei um <Token: URL, Lexema: " + getLexema() + ", Tamanho: " + yylength() + ", Linha: " + yyline + ", Coluna: " + yycolumn + ">");
 }
 
 /* Ignorar qualquer coisa não casada */
-.|\n { /* Ignorar */ }
+[^] { /* Ignorar */ }

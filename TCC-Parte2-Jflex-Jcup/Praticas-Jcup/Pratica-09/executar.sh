@@ -20,9 +20,8 @@ javac -cp ../../jcup.jar *.java
 # Executar a classe principal:
 echo "Digite uma expressão:"
 echo "Exemplos:"
-echo "(10 + 5) - 2; -> 13"
-echo "10 + (5 - 2); -> 13"
-echo "10 + 5 - 2;   -> 13"
-echo "10 - (5 + 2); ->  3"
-echo "10 - 5 + 2;   ->  7"
+echo "(10 + 5) * 2; -> 30"
+echo "10 / (5 - 2); -> 3" 
+echo "10 % (5 - 2); -> 1"
+echo "10 - (5 ^ 2); -> -15"
 java -cp .:../../jcup.jar Main
